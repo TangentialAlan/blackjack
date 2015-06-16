@@ -22,5 +22,13 @@ public class Deck {
 		suits.put(list, Suit.Diamonds);
 		suits.put(list, Suit.Clubs);
 		suits.put(list, Suit.Spades);
+		/*
+		I think you should go for the suits as keys with the list as the value.
+		That way you  can call the respective suit and then the card.
+		The list itself is unique, so it shouldn't be a key, since it then has to map
+		to multiple things.
+		But you have 4 suits, so each suit can map to the same thing.
+		*@author Alan
+		*/
 	}
 }
